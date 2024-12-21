@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --accent: 29, 185, 84;
+  --accent-light: 163, 230, 53;
+  --accent-dark: 21, 128, 61;
+}
+
+html {
+  font-family: 'Poppins', system-ui, sans-serif;
+  background: #0f172a;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}

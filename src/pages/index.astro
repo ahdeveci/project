@@ -1,0 +1,145 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Card from '../components/Card.astro';
+import RamsarWidget from '../components/RamsarWidget.astro';
+---
+
+<Layout title="Türkiye'den Geçen Kuş Göçleri">
+	<main>
+		<h1>Türkiye'den Geçen <span class="text-gradient">Kuş Göçleri</span></h1>
+		
+		<section class="hero">
+			<img src="https://images.unsplash.com/photo-1584267385494-9fdd9a71ad75" alt="Flamingolar" class="hero-image" />
+			<p class="intro">
+				Türkiye, Afrika ve Avrupa arasındaki önemli kuş göç yolları üzerinde yer almaktadır. Her yıl milyonlarca kuş bu rotaları kullanarak göç eder.
+			</p>
+		</section>
+
+		<RamsarWidget />
+
+		<section class="migration-routes">
+			<h2>Önemli Göç Rotaları</h2>
+			<div class="route-cards">
+				<Card
+					href="#bosphorus"
+					title="Boğaz Göç Yolu"
+					body="İstanbul Boğazı üzerinden geçen göç yolu, yırtıcı kuşlar ve Sylvia türleri için önemli bir geçiş noktasıdır."
+				/>
+				<Card
+					href="#caucasus"
+					title="Kafkasya Rotası"
+					body="Doğu Karadeniz üzerinden geçen bu rota, özellikle leylekler ve Sylvia türleri tarafından kullanılır."
+				/>
+				<Card
+					href="#mediterranean"
+					title="Akdeniz Kıyı Şeridi"
+					body="Akdeniz kıyısı boyunca uzanan rota, flamingolar ve su kuşları için hayati önem taşır."
+				/>
+			</div>
+		</section>
+
+		<section class="wetlands">
+			<h2>Önemli Sulak Alanlar</h2>
+			<div class="wetland-grid">
+				<div class="wetland-card">
+					<img src="https://images.unsplash.com/photo-1552083375-1447ce886485" alt="Kızılırmak Deltası" />
+					<h3>Kızılırmak Deltası</h3>
+					<p>Samsun'da bulunan delta, 359 kuş türüne ev sahipliği yapan, Karadeniz'in en büyük sulak alanıdır. Özellikle flamingolar ve Sylvia türleri için önemli bir yaşam alanıdır.</p>
+				</div>
+				<div class="wetland-card">
+					<img src="https://images.unsplash.com/photo-1584267385494-9fdd9a71ad75" alt="Flamingolar" />
+					<h3>Gediz Deltası</h3>
+					<p>İzmir'de bulunan delta, Akdeniz'in en büyük flamingo kolonilerine ev sahipliği yapar. Her yıl binlerce flamingo burada ürer.</p>
+				</div>
+				<div class="wetland-card">
+					<img src="https://images.unsplash.com/photo-1621632361333-4649f0e589d4" alt="Leylek" />
+					<h3>Sultan Sazlığı</h3>
+					<p>Kayseri'de bulunan bu alan, leylekler ve Sylvia türleri için önemli bir durak noktasıdır. İç Anadolu'nun en önemli sulak alanlarından biridir.</p>
+				</div>
+			</div>
+		</section>
+	</main>
+</Layout>
+
+<style>
+	main {
+		margin: auto;
+		padding: 1rem;
+		width: 1200px;
+		max-width: calc(100% - 2rem);
+		color: white;
+		font-size: 20px;
+		line-height: 1.6;
+	}
+	h1 {
+		font-size: 4rem;
+		font-weight: 700;
+		line-height: 1;
+		text-align: center;
+		margin-bottom: 1em;
+	}
+	.text-gradient {
+		background-image: var(--accent-gradient);
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+		background-size: 400%;
+		background-position: 0%;
+	}
+	.hero {
+		margin-bottom: 4rem;
+		text-align: center;
+	}
+	.hero-image {
+		width: 100%;
+		max-height: 500px;
+		object-fit: cover;
+		border-radius: 1rem;
+		margin-bottom: 2rem;
+	}
+	.intro {
+		font-size: 1.5rem;
+		max-width: 800px;
+		margin: 0 auto;
+	}
+	section {
+		margin-bottom: 4rem;
+	}
+	h2 {
+		font-size: 2.5rem;
+		margin-bottom: 2rem;
+		text-align: center;
+	}
+	.route-cards {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+		gap: 2rem;
+	}
+	.wetland-grid {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+		gap: 2rem;
+	}
+	.wetland-card {
+		background: rgba(255, 255, 255, 0.1);
+		border-radius: 1rem;
+		overflow: hidden;
+		transition: transform 0.3s ease;
+	}
+	.wetland-card:hover {
+		transform: translateY(-5px);
+	}
+	.wetland-card img {
+		width: 100%;
+		height: 200px;
+		object-fit: cover;
+	}
+	.wetland-card h3 {
+		padding: 1rem;
+		margin: 0;
+	}
+	.wetland-card p {
+		padding: 0 1rem 1rem;
+		margin: 0;
+		font-size: 0.9em;
+	}
+</style>

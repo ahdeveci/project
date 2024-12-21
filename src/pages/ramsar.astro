@@ -1,0 +1,128 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="Ramsar Sözleşmesi - Sulak Alanların Korunması">
+    <main>
+        <h1>Ramsar <span class="text-gradient">Sözleşmesi</span></h1>
+        
+        <article class="content">
+            <section>
+                <h2>Sözleşme Hakkında</h2>
+                <p>Ramsar Sözleşmesi, 1971 yılında İran'ın Ramsar kentinde imzalanan "Özellikle Su Kuşları Yaşama Ortamı Olarak Uluslararası Öneme Sahip Sulak Alanların Korunması Sözleşmesi"dir.</p>
+            </section>
+
+            <section>
+                <h2>Temel Amaçlar</h2>
+                <ul>
+                    <li>Sulak alanların akılcı kullanımını sağlamak</li>
+                    <li>Önemli sulak alanları koruma altına almak</li>
+                    <li>Sulak alanlar konusunda uluslararası işbirliği yapmak</li>
+                    <li>Su kuşlarının yaşama ortamlarını korumak</li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>Türkiye'nin Konumu</h2>
+                <p>Türkiye, 1994 yılında Ramsar Sözleşmesi'ne taraf olmuştur. Ülkemizde çok sayıda Ramsar alanı bulunmaktadır ve bu alanlar özellikle göçmen kuşlar için hayati önem taşımaktadır.</p>
+            </section>
+
+            <section>
+                <h2>Önemli Ramsar Alanları</h2>
+                <ul>
+                    <li>Manyas (Kuş) Gölü</li>
+                    <li>Sultan Sazlığı</li>
+                    <li>Burdur Gölü</li>
+                    <li>Göksu Deltası</li>
+                    <li>Kızılırmak Deltası</li>
+                </ul>
+            </section>
+
+            <div class="info-box">
+                <h3>Önemli Not</h3>
+                <p>Bu sayfa, Ramsar Sözleşmesi'nin genel bir özetini sunmaktadır. Detaylı bilgi için <a href="https://www.tarimorman.gov.tr/DKMP/Belgeler/MEVZUAT/Uluslararas%C4%B1%20S%C3%B6zle%C5%9Fmeler/7%20RAMSAR%20S%C3%96ZLE%C5%9EMES%C4%B0.pdf" target="_blank" rel="noopener noreferrer">resmi belgeyi</a> inceleyebilirsiniz.</p>
+            </div>
+        </article>
+    </main>
+</Layout>
+
+<style>
+    main {
+        margin: auto;
+        padding: 2rem;
+        width: 800px;
+        max-width: calc(100% - 2rem);
+        color: white;
+    }
+
+    h1 {
+        font-size: 3rem;
+        font-weight: 700;
+        line-height: 1;
+        text-align: center;
+        margin-bottom: 2em;
+    }
+
+    .text-gradient {
+        background-image: var(--accent-gradient);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-size: 400%;
+        background-position: 0%;
+    }
+
+    .content {
+        background: rgba(255, 255, 255, 0.05);
+        border-radius: 1rem;
+        padding: 2rem;
+    }
+
+    section {
+        margin-bottom: 2rem;
+    }
+
+    h2 {
+        color: rgb(var(--accent-light));
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+    }
+
+    ul {
+        list-style-type: none;
+        padding: 0;
+    }
+
+    li {
+        margin-bottom: 0.5rem;
+        padding-left: 1.5rem;
+        position: relative;
+    }
+
+    li::before {
+        content: "•";
+        color: rgb(var(--accent-light));
+        position: absolute;
+        left: 0;
+    }
+
+    .info-box {
+        background: rgba(var(--accent-dark), 0.3);
+        border-radius: 0.5rem;
+        padding: 1.5rem;
+        margin-top: 2rem;
+    }
+
+    .info-box h3 {
+        color: rgb(var(--accent-light));
+        margin: 0 0 0.5rem 0;
+    }
+
+    .info-box a {
+        color: rgb(var(--accent-light));
+        text-decoration: underline;
+    }
+
+    .info-box a:hover {
+        opacity: 0.8;
+    }
+</style>
