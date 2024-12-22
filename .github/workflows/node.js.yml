@@ -36,11 +36,14 @@ jobs:
     - name: Upload artifact
       uses: actions/upload-pages-artifact@v3
       with:
-        path: ./dist
+        path: ./build
         name: artifact-${{ github.run_number }}
     
 # Deployment job
   deploy:
+    environment: 
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url}}
     runs-on: ubuntu-latest
     needs: build
     steps:
@@ -64,6 +67,7 @@ jobs:
           git config --global user.name "ahdeveci"
 
       - name: Deploy to GitHub Pages
+        id: deployment
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
