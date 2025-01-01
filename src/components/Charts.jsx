@@ -7,8 +7,8 @@ const Charts = () => {
       <h3 className="text-lime-300 m-0 mb-2">Kızılırmak Deltası</h3>
       <p className="m-0 mb-4 opacity-90">Kızılırmak'ın yeryüzü suları zaman içerisindeki değişimi</p>
       <div className='flex flex-row gap-4'>
-        <img src="/public/assets/PHOTO-2024-12-19-16-01-38 2.jpg" className="h-full max-w-[550px] rounded-2xl mb-8" />
-        <img src="/public/assets/PHOTO-2024-12-19-16-01-38.jpg" className="h-full max-w-[550px] object-cover rounded-2xl mb-8" />
+        <img src="./assets/PHOTO-2024-12-19-16-01-38 2.jpg" className="h-full max-w-[550px] rounded-2xl mb-8" />
+        <img src="./assets/PHOTO-2024-12-19-16-01-38.jpg" className="h-full max-w-[550px] object-cover rounded-2xl mb-8" />
       </div>
       
     </div>

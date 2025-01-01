@@ -11,8 +11,8 @@ NASA ve GRACE-FO (Gravity Recovery and Climate Experiment Follow-On) verilerini 
 Uzay tabanlı ve yerel veri kaynaklarını entegre ederek koruma politikaları geliştirmek.
     </p>
     <div className='text-center flex flex-row gap-4'>
-      <img src="/public/assets/Sylvia_atricapilla_heineken.jpg" className="h-full max-w-[550px] rounded-2xl mb-8" />
-      <img src="/public/assets/kizilirmak-deltasi-kus-cenneti.png" className="h-full max-w-[550px] rounded-2xl mb-8"/>
+      <img src="./assets/Sylvia_atricapilla_heineken.jpg" className="h-full max-w-[550px] rounded-2xl mb-8" />
+      <img src="./assets/kizilirmak-deltasi-kus-cenneti.png" className="h-full max-w-[550px] rounded-2xl mb-8"/>
     </div>
     
   </div>
