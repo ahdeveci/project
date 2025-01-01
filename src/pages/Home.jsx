@@ -51,13 +51,13 @@ const Home = () => {
       <h1 className="text-6xl font-bold leading-none text-center mb-8">
         Türkiye'den Geçen <span className="bg-gradient-to-r from-emerald-500 via-lime-300 to-white bg-clip-text text-transparent">Kuş Göçleri</span>
       </h1>
-      
+
       <Hero />
 
       <ProjectPurpose/>
 
       <Charts/>
-      
+
       <RamsarWidget />
 
       <div className="bg-white/10 rounded-2xl p-6 mt-8 border border-lime-300/20">
@@ -73,19 +73,19 @@ const Home = () => {
               console.log('month', e.target.value);
               setMonth(e.target.value);
           }} />
-          <Link target="_blank" to={`https://grace.jpl.nasa.gov/data-analysis-tool/#b=ESRI_World_Imagery&l=TELLUS_GRAC-GRFO_MASCON_CRI_GRID_RL06.3_V4_LAND(1),OSMCoastlines(1)&vm=2D&ve=20.13501216458853,25.874625562570568,48.66446790446322,51.24452820936608&pl=false&pb=false&tr=false&d=${month}-30&tlr=months`} 
+          <Link target="_blank" to={`https://grace.jpl.nasa.gov/data-analysis-tool/#b=ESRI_World_Imagery&l=TELLUS_GRAC-GRFO_MASCON_CRI_GRID_RL06.3_V4_LAND(1),OSMCoastlines(1)&vm=2D&ve=20.13501216458853,25.874625562570568,48.66446790446322,51.24452820936608&pl=false&pb=false&tr=false&d=${month}-30&tlr=months`}
                 className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 ml-4 rounded focus:outline-none focus:shadow-outline">
             Seç
           </Link>
         </div>
-        
+
       </div>
-      <div className='text-center flex flex-row gap-4'>
-        <img src="assets/sep-2024-status.png" className="h-full max-w-[550px] object-cover rounded-2xl mb-8" />
+      <div className='text-center flex flex-row gap-4 justify-center'>
+        <img src="assets/sep-2024-status.png" className="md:h-full md:max-w-[550px] sm:w-full sm:h-auto sm:max-w-full rounded-2xl mb-8" />
       </div>
-      
+
     </div>
-      
+
       <section className="mb-16 mt-16">
         <h2 className="text-4xl mb-8 text-center">Önemli Göç Rotaları</h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">

@@ -10,11 +10,11 @@ Kuş göç yollarının ekolojik sürdürülebilirliğini sağlamak için koruma
 NASA ve GRACE-FO (Gravity Recovery and Climate Experiment Follow-On) verilerini kullanarak su kaynakları, toprak nemi ve arazi kullanımındaki değişikliklerin kuş göçü üzerindeki etkilerini analiz etmek.
 Uzay tabanlı ve yerel veri kaynaklarını entegre ederek koruma politikaları geliştirmek.
     </p>
-    <div className='text-center flex flex-row gap-4'>
-      <img src="./assets/Sylvia_atricapilla_heineken.jpg" className="h-full max-w-[550px] rounded-2xl mb-8" />
-      <img src="./assets/kizilirmak-deltasi-kus-cenneti.png" className="h-full max-w-[550px] rounded-2xl mb-8"/>
+    <div className='text-center flex flex-row gap-4 flex-wrap align-middle justify-center'>
+      <img src="./assets/Sylvia_atricapilla_heineken.jpg" className="md:h-full md:max-w-[550px] sm:w-full sm:h-auto sm:max-w-full rounded-2xl mb-8" />
+      <img src="./assets/kizilirmak-deltasi-kus-cenneti.png" className="md:h-full md:max-w-[550px] sm:w-full sm:h-auto sm:max-w-full rounded-2xl mb-8"/>
     </div>
-    
+
   </div>
   );
 };

@@ -8,7 +8,7 @@
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "deploy": "yarn build & npx gh-pages clean -d dist"
+    "deploy": "yarn build & sleep 2 & npx gh-pages clean -d dist"
   },
   "dependencies": {
     "gh-pages": "^6.2.0",
