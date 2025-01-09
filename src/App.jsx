@@ -5,7 +5,7 @@ import Ramsar from './pages/Ramsar';
 
 const App = () => {
   return (
-    <Router basename="/vera-project/">
+    <Router basename="/turkiyeden-gecen-gocmen-kuslar/">
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/ramsar" element={<Ramsar />} />
